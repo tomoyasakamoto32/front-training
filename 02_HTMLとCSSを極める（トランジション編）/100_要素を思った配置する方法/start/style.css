@@ -3,6 +3,9 @@
   background-color: #51dada;
   height: 600px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .child {
@@ -31,9 +34,9 @@
 
 .child.v3 {
   background-color: rebeccapurple;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /**
