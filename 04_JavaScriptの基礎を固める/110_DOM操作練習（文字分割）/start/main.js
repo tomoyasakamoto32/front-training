@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
   const el = document.querySelector('.animate-title');
   const str = el.innerHTML.trim().split("");
-  str.reduce((acc, curr)=>{
+  el.innerHTML = str.reduce((accu, curr) => {
     curr = curr.replace(' ', '&nbsp;');
-    return `${acc}<span class="char">${curr}</span>`;
+    return `${accu}<span class="char">${curr}</span>`;
   }, "")
   // let concatStr = '';
 
@@ -11,9 +11,4 @@ document.addEventListener('DOMContentLoaded', function(){
   //   c = c.replace(' ', '&nbsp;');
   //   concatStr += `<span class="char">${c}</span>`;
   // }
-
-  el.innerHTML = str.reduce((acc, curr)=>{
-    curr = curr.replace(' ', '&nbsp;');
-    return `${acc}<span class="char">${curr}</span>`;
-  }, "");
 });

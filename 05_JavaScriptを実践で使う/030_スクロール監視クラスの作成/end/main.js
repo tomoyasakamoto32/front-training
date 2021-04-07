@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const cb = function (el, isIntersecting) {
@@ -9,4 +10,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const so = new ScrollObserver('.animate-title', cb);
 });
-
